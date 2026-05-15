@@ -63,7 +63,7 @@ The ENDR-ILC framework was rigorously evaluated against biological hallmarks of 
 <p align="center">
   <img src="ARChi_MP_page-0001.jpg" alt="ENDR-ILC Architecture Diagram" width="800"/>
 </p>
-*Figure 1: The proposed architecture bifurcating spatial error into the Explicit Cognitive Ensemble (Fast) and the Implicit Cerebellar ILC (Slow), modulated by an attention gate ($\alpha=0.1$).*
+Figure 1: The proposed architecture bifurcating spatial error into the Explicit Cognitive Ensemble (Fast) and the Implicit Cerebellar ILC (Slow), modulated by an attention gate (alpha=0.1).
 
 ### 2. Replication of Biological Motor Learning (The Dual-Rate Model)
 The framework successfully replicates the classic biological dual-rate learning curve over a 1000-trial episodic reaching task.
