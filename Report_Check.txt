@@ -1,0 +1,36 @@
+1. did we include the input values taken by both ILC block and ANN block?
+
+2. Did we include all the error rates and equations we are calculating i.e Joint error in ANN block, MSE, new_torques, total torques, etc.
+
+3. the reason for keeping the ANN small only 82 params
+
+4. reason to add bootstraping into existing framework and it results on the framework
+
+5. reason why did we used ablation study and its result inference basically the logic behind it.
+
+6. reason why did we put the alpha rate = 0.1 very low for ANN
+
+7.  did we include the following reason on "I trained a neural network" to "I mathematically deconstructed the neural network's control strategy."
+
+Angle A: The "Black Box" Interpretability Defense
+Angle B: Brittleness vs. Redundancy (The Argument for Ensembles)
+Angle C: Functional Localization in Cognitive-Motor Tasks
+
+8. How Bootstrapping is Implemented (The Technical POV) and its result charts inference 
+
+9. Deconstructing the Uncertainty Chart in report, including the math behind it?
+
+10. did we include the following things our results section:
+
+10.1Kinematic Stability and Baseline Performance
+10.2 Replication of Biological Motor Learning (The Dual-Rate Model)
+10.3 Deconstructing the "Black Box": A Structural Ablation Study
+10.4 Resolving Brittleness via Bootstrapped Ensembles
+10.5 Quantifying Cognitive Uncertainty
+
+11. After Effects of making Weight_Decay = 0 for ANN block, including the charts and how did it affect the model?
+
+12. Describe the all sets of Tests we performed to get optimal set of hyperparameters and how did it affect the model? check Tests.txt for it 
+
+13. reason for "giving 10% weightage to Proposed Fast Process ANN then, what is the point of proposing it in first place?"
+
