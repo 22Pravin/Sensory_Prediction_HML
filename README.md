@@ -61,7 +61,7 @@ The ENDR-ILC framework was rigorously evaluated against biological hallmarks of 
 
 ### 1. The ENDR-ILC Architecture
 <p align="center">
-  <img src="images/ARChi_MP.pdf" alt="ENDR-ILC Architecture Diagram" width="800"/>
+  <img src="ARChi_MP.pdf" alt="ENDR-ILC Architecture Diagram" width="800"/>
 </p>
 *Figure 1: The proposed architecture bifurcating spatial error into the Explicit Cognitive Ensemble (Fast) and the Implicit Cerebellar ILC (Slow), modulated by an attention gate ($\alpha=0.1$).*
 
