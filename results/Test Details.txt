@@ -1,0 +1,108 @@
+Test Details:
+
+DAY-1_TEST-1: 
+
+Slow Process:
+
+Slow lambda = 0.99
+Slow_lr =0.005
+
+Fast Process:
+
+Learning Rate = 0.005
+weight_decay = 0.1
+alpha = 0.5
+
+DAY-1_TEST-2: 
+
+Slow Process:
+
+Slow lambda = 1.0
+Slow_lr =0.05
+
+Fast Process:
+
+Learning Rate = 0.01
+weight_decay = 0.01
+alpha = 0.2
+
+DAY-2_TEST-0: 
+
+Slow Process:
+
+Slow lambda = 1.0
+Slow_lr =0.05
+
+Fast Process:
+
+Learning Rate = 0.01
+weight_decay = 0.01
+alpha = 0.2
+
+DAY-2_TEST-1: (Ensemble Method Implementation)
+
+Slow Process:
+
+Slow lambda = 1.0
+Slow_lr =0.05
+
+Fast Process:
+
+Learning Rate = 0.01
+weight_decay = 0.01
+alpha = 0.1
+
+DAY-2_TEST-2: 
+
+Slow Process:
+
+Slow lambda = 1.0
+Slow_lr =0.05
+
+Fast Process:
+
+Learning Rate = 0.01
+weight_decay = 0.0
+alpha = 0.1
+
+DAY-2_TEST-3: 
+
+Slow Process:
+
+Slow lambda = 1.0
+Slow_lr =0.05
+
+Fast Process:
+
+Learning Rate = 0.01
+weight_decay = 0.01
+alpha = 0.8
+
+DAY-2_TEST-4: 
+
+Slow Process:
+
+Slow lambda = 0.85
+Slow_lr =0.05
+
+Fast Process:
+
+Learning Rate = 0.01
+weight_decay = 0.01
+alpha = 0.1
+
+DAY-2_TEST-5: 
+
+Slow Process:
+
+Slow lambda = 1.0
+Slow_lr =0.05
+
+Fast Process:
+
+Learning Rate = 0.1
+weight_decay = 0.1
+alpha = 0.1
+
+backward pass = 0.1
+
