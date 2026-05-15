@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Framework-ee4c2c.svg)](https://pytorch.org/)
 [![MuJoCo](https://img.shields.io/badge/MuJoCo-Physics-black.svg)](https://mujoco.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](#-license-and-copyright)
 
 **Official repository for: "Simulation Studies for Understanding Human Motor Learning in Unstructured Environments"**
 
@@ -158,3 +158,15 @@ Code snippet
 }
 ```
 ---
+## 📜 License and Copyright
+
+**Copyright © 2026 Dhirubhai Ambani University. All rights reserved.**
+
+This project, including all source code, data, models, and associated documentation, is the exclusive intellectual property of **Dhirubhai Ambani University**. It was developed by Pravinkumar Gohil as part of the M.Tech (ICT) program.
+
+**Terms of Use:**
+* This repository is made public strictly for academic review, evaluation, and portfolio demonstration purposes.
+* Unauthorized copying, modification, distribution, public display, or commercial use of this software, via any medium, is strictly prohibited without prior written consent.
+* No license, express or implied, is granted to any person obtaining a copy of this software.
+
+For inquiries regarding academic collaboration or the extended use of the ENDR-ILC framework, please contact the author at `202511013@dau.ac.in` or the university administration.
