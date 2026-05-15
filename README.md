@@ -55,6 +55,56 @@ Environmental stochasticity is quantified in real-time by extracting the varianc
 $$\sigma^2(t) = \frac{1}{N} \sum_{i=1}^{N} \left( U_{fast, i}(t) - U_{fast\_mean}(t) \right)^2$$
 
 ---
+## 🏆 Key Empirical Results & Successful Findings
+
+The ENDR-ILC framework was rigorously evaluated against biological hallmarks of sensorimotor adaptation. The following findings validate the model's ability to fuse explicit cognitive strategies with implicit motor memory.
+
+### 1. The ENDR-ILC Architecture
+<p align="center">
+  <img src="images/ARChi_MP.pdf" alt="ENDR-ILC Architecture Diagram" width="800"/>
+</p>
+*Figure 1: The proposed architecture bifurcating spatial error into the Explicit Cognitive Ensemble (Fast) and the Implicit Cerebellar ILC (Slow), modulated by an attention gate ($\alpha=0.1$).*
+
+### 2. Replication of Biological Motor Learning (The Dual-Rate Model)
+The framework successfully replicates the classic biological dual-rate learning curve over a 1000-trial episodic reaching task.
+
+<p align="center">
+  <img src="results/day2/D2_T1_Figure_1.png" alt="Motor Learning Curve showing Savings" width="600"/>
+</p>
+
+* **Adaptation (Trial 401):** When a $-1$ N.m perturbation is introduced, the spatial error spikes but is rapidly suppressed by the fast cognitive ensemble, followed by slow, exponential ILC convergence.
+* **The Washout Aftereffect (Trial 601):** Upon abrupt removal of the perturbation, the system exhibits a negative error spike. This physically proves the framework did not merely react to error, but synthesized a predictive **internal forward model**.
+* **Motor Savings (Trial 801):** When the perturbation is reintroduced, the readaptation gradient is significantly steeper. The system exhibits biological "savings," confirming the successful retention of the implicit memory trace.
+
+### 3. Quantifying Cognitive Uncertainty
+By utilizing a bootstrapped ensemble of $N=5$ agents, the framework extracts real-time environmental uncertainty without the computational overhead of Bayesian networks.
+
+<p align="center">
+  <img src="results/day2/D2_T1_BT1_Figure_1.png" alt="Ensemble Variance Chart" width="600"/>
+</p>
+
+* **Environmental Surprise:** The massive variance spike at Trial 400 mathematically flags that the independent agents disagree on the optimal strategy when faced with a novel perturbation.
+* **Cognitive Confidence:** As the internal model converges, uncertainty decays. Crucially, the variance spike during Readaptation (Trial 800) is heavily muted, proving the ensemble successfully recalled the perturbation mapping.
+
+### 4. Deconstructing the "Black Box": Structural Ablation
+To diagnose the structural brittleness of single-network controllers, a single-neuron mathematical ablation study ($Mask = 0.0$) was executed on the explicit ensemble.
+
+<p align="center">
+  <img src="results/Ablation_Study/D2_T1_Alb_1.png" alt="Ablation Bar Chart" width="400"/>
+  <img src="results/Ablation_Study/D2_T1_Alb_2.png" alt="Ablation Degradation Curve" width="400"/>
+</p>
+
+* **Functional Localization:** The study revealed that the backpropagation algorithm heavily weights a singular, "load-bearing" node within the hidden layer to manage the explicit strategy.
+* **Resolving Brittleness:** Lesioning this critical neuron catastrophically lobotomizes the fast process (red dashed line). This finding empirically justifies our use of **Bootstrapped Ensembles**, which forces structural redundancy and protects the physical plant from singular nodal failures.
+
+### 5. Failure State Analysis: The Necessity of Passive Forgetting
+<p align="center">
+  <img src="results/day2/D2_T2_Figure_1.png" alt="Failure State Weight Decay 0" width="600"/>
+</p>
+
+To prove the necessity of biological decay rates, L2 Regularization was disabled (`weight_decay = 0.0`). Without passive forgetting, the network suffered **catastrophic interference**. During the Washout phase, the networks violently overwrote their synaptic weights, completely destroying the implicit memory trace and nullifying the "savings" effect during readaptation.
+
+---
 
 ## 📊 Key Empirical Findings
 
